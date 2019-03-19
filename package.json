@@ -16,12 +16,14 @@
     "mocha": "^6.0.2"
   },
   "scripts": {
-    "test": "mocha --require babel-core/register index.spec.js"
+    "test": "mocha --require babel-core/register index.spec.js --watch"
   },
   "babel": {
     "presets": [
       "env"
     ],
-    "plugins": ["transform-runtime"]
+    "plugins": [
+      "transform-runtime"
+    ]
   }
 }
